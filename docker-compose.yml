@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  postgres-database:
+    container_name: proffy-postgres
+    image: postgres:14.5-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: proffy
+      PGDATA: /data/postgres
+    volumes:
+      - .postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
