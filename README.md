@@ -14,6 +14,9 @@ Check [Alpine](https://docs.alpinelinux.org/user-handbook/0.1a/index.html) docum
 
 Run `docker-compose up -d` to start docker compose services in detach mode.
 
+### Script Execution Order
+For the correct script execution order, run the scripts flowing the number since `Iteração 1`.
+
 ## Stop Database
 
 Run `docker-compose down` to stop docker compose services.
